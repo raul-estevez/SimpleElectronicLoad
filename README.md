@@ -1,6 +1,5 @@
-[OHlogo]: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Open-source-hardware-logo.svg/1200px-Open-source-hardware-logo.svg.png "Open Hardware Logo"
+[OHlogo]: https://blog.spiralofhope.com/wp-content/uploads/Open-source-hardware-logo-alpha.png
 
 # SimpleElectronicLoad 
-======================
 
 ![alt text][OHlogo]
