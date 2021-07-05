@@ -4,7 +4,7 @@
 #### Table of Contents 
 [Schematic](#schematic)  
 [Function Principle](#function-principle)  
-[Customitations](#customitations)  
+[Customizations](#customizations)  
 [Usage](#usage)  
 [BOM](#bom)  
 [Calibration](#calibration)  
@@ -30,7 +30,13 @@ one that the user manipulates in order to modify the current. The voltage swing 
 RV3 takes as input the voltage from RV2 and outputs a calibrated voltage more suitable for the shunt's output 
 i.e the voltage swing of this pot is 0v -  I * R(shunt) and thus obtaining the most effective voltage swing almost
 independendent of the shunt resistor value.
-## Customitations
+
+The fan driver functions as follows: R2, R3 & R4 set the hysteresis  in this case is 1v i.e if the upper limit 
+is lets say 9v, the fan only turns on when the voltage reaches that value, and it only turns off when it reaches 
+9 - 1 = 8v. RV1 sets the upper and lower bounds of the hysteresis (separated by 1v as disscused). If you want to 
+modify the values I recomend this site: https://www.daycounter.com/Calculators/Comparator-Hysteresis-Calculator.phtml
+
+## Customizations
 
 ## Usage 
 
