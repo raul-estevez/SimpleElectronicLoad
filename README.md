@@ -17,6 +17,8 @@
 The goal of this project is to design a simple but robust dummy load/electronic load using the fewer components 
 possible but providing with a product that can do its job reasonably well and cheap.
 
+The nature of the project is also providing a gread costumization of the cuircuit, either the components or the 
+maximun ratings (current, voltage, power...)
 ## Schematic 
 
 ![circuit schematic](/schematic/schematic.png "Circuit schematic")
@@ -47,9 +49,17 @@ modify the values I recomend this site: https://www.daycounter.com/Calculators/C
 There are some things that can be modified in the circuit. As you can see in the schematic the current set 
 circuitry can be changed to acomodate other types of voltage references (either by the use of a zener diode,
 voltge divider, LM317...). RV3 can be as well substituted by a voltage divider, but is not encouraged.  
-In the input section both the protection diodes and shunt resistor can be acomodated to your specifyc max current.  
 In the fan driver circuit, if you already know the RV1 voltage you need, you can substitute RV1 with a voltage 
-divider. Feel free to use any mosfet/bjt that you have in hand and can withstand the fan currents.
+divider. Feel free to use any mosfet/bjt that you have in hand and can withstand the fan currents.  
+
+Following the nature of the project, depending on the maximun specifications you are willing to impose in the 
+circuit, the MOSFETS (model and number), voltmeter, amperemeter, input diodes, shunt resistor and heathsink can 
+be adjusted to your need.  
+
+That is, for example if you only need a 1A, 15V dummy load you should be good with only one MOSFET a 15V voltmeter
+, 1A amperemeter, a simpler input diode, maybe a higher shunt and a smaller heathsink. But if in the other hand 
+you want a 200W dummy load you will need to beed up the components.
+
 
 ## Usage 
 
