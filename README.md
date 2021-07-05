@@ -13,7 +13,7 @@
 
 ## Schematic 
 
-![circuit schematic](/schematic/simpleelectronicload.pdf "Circuit schematic")
+![circuit schematic](/schematic/schematic.png "Circuit schematic")
 ## Function Principle
 
 ## Customitations
