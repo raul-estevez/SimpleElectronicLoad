@@ -2,14 +2,20 @@
 # SimpleElectronicLoad 
 
 #### Table of Contents 
+[General Description](#general-description)
 [Schematic](#schematic)  
 [Function Principle](#function-principle)  
-[Customizations](#customizations)  
+[Modifications](#modifications)  
 [Usage](#usage)  
 [BOM](#bom)  
 [Calibration](#calibration)  
 [Limitations](#limitations)  
 [License](#license)  
+
+## General Description
+
+The goal of this project is to design a simple but robust dummy load/electronic load using the fewer components 
+possible but providing with a product that can do its job reasonably well and cheap.
 
 ## Schematic 
 
@@ -36,9 +42,20 @@ is lets say 9v, the fan only turns on when the voltage reaches that value, and i
 9 - 1 = 8v. RV1 sets the upper and lower bounds of the hysteresis (separated by 1v as disscused). If you want to 
 modify the values I recomend this site: https://www.daycounter.com/Calculators/Comparator-Hysteresis-Calculator.phtml
 
-## Customizations
+## Modifications
+
+There are some things that can be modified in the circuit. As you can see in the schematic the current set 
+circuitry can be changed to acomodate other types of voltage references (either by the use of a zener diode,
+voltge divider, LM317...). RV3 can be as well substituted by a voltage divider, but is not encouraged.  
+In the input section both the protection diodes and shunt resistor can be acomodated to your specifyc max current.  
+In the fan driver circuit, if you already know the RV1 voltage you need, you can substitute RV1 with a voltage 
+divider. Feel free to use any mosfet/bjt that you have in hand and can withstand the fan currents.
 
 ## Usage 
+
+The usage is very simple in nature. The user only needs to insert leads in the input conectors, switch on the 
+input swith (SW1) and adjust RV2 to the desired current (that the user can read in the included amperemeter)
+
 
 ## BOM
 
