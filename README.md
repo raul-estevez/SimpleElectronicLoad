@@ -17,8 +17,8 @@
 The goal of this project is to design a simple but robust dummy load/electronic load using the fewer components 
 possible but providing with a product that can do its job reasonably well and cheap.
 
-The nature of the project is also providing a gread costumization of the cuircuit, either the components or the 
-maximun ratings (current, voltage, power...)
+The nature of the project is also providing a great costumization of the cuircuit, both in the components and in 
+the maximun ratings (current, voltage, power...)
 ## Schematic 
 
 ![circuit schematic](/schematic/schematic.png "Circuit schematic")
@@ -54,11 +54,11 @@ In the fan driver circuit, if you already know the RV1 voltage you need, you can
 divider. Feel free to use any mosfet/bjt that you have in hand and can withstand the fan currents.  
 
 Following the nature of the project, depending on the maximun specifications you are willing to impose in the 
-circuit, the MOSFETS (model and number), voltmeter, amperemeter, input diodes, shunt resistor and heathsink can 
+circuit, the MOSFETS (model and number), voltmeter, amperemeter, input diodes, shunt resistor and heatsink can 
 be adjusted to your need.  
 
 That is, for example if you only need a 1A, 15V dummy load you should be good with only one MOSFET a 15V voltmeter
-, 1A amperemeter, a simpler input diode, maybe a higher shunt and a smaller heathsink. But if in the other hand 
+, 1A amperemeter, a simpler input diode, maybe a higher shunt and a smaller heatsink. But if in the other hand 
 you want a 200W dummy load you will need to beef up the components.
 
 
@@ -93,5 +93,9 @@ temperature curve.
 
 ## Limitations
 
+The most obvious limitations are the voltmeter & amperemeter absolute maximun ratings. But keep in mind that in 
+reallity the most important part of this project is the heatsink and not providing the MOSFETS with enough
+cooling will cause they destructions
 
 ## License
+You can read the license [here](LICENSE)
