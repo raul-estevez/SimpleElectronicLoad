@@ -104,3 +104,5 @@ photo i will feel very motivated!
 
 ## License
 You can read the license [here](LICENSE)
+
+![Open Hardware logo](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Open-source-hardware-logo.svg/114px-Open-source-hardware-logo.svg.png "Open Hardware Logo")
