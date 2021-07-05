@@ -65,14 +65,33 @@ you want a 200W dummy load you will need to beef up the components.
 ## Usage 
 
 The usage is very simple in nature. The user only needs to insert leads in the input conectors, switch on the 
-input swith (SW1) and adjust RV2 to the desired current (that the user can read in the included amperemeter)
+input switch (SW1) and adjust RV2 to the desired current (that the user can read in the included amperemeter)
 
 
 ## BOM
 
 You can see the BOM [here](schematic/bom.txt)
+
 ## Calibration
 
+### Current calibration
+For current calibration you will need a power supply capable of providing the max current you want the dummy load
+to sink, a multimeter capable of reading that current and probably a screw driver to adjust RV3. Disconecting the 
+system amperemeter is encouraged.  
+    
+1. First connect the power supply to the multimeter and the dummy load. Please make sure the system amperemeter
+is indeed disconected.
+2. Turn all the way up RV2, the current shoud rise.
+3. Then adjust RV3 until the read in the multimeter matches with the maximun rating of your dummy load.
+4. Dont forget to reconect the amperemeter.
+
+### Temperature limiting
+
+The overtemperature protection in this type of circuits is sadly a guessing game. According to the maths, roughly 
+8.0v in RV1 gives a ~90ºC upper threshold. But this voltage will vary a lot depending on your NTC value and 
+temperature curve.
+
 ## Limitations
+
 
 ## License
