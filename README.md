@@ -10,6 +10,7 @@
 [BOM](#bom)  
 [Calibration](#calibration)  
 [Limitations](#limitations)  
+[Author] (#author)
 [License](#license)  
 
 ## General Description
@@ -17,7 +18,7 @@
 The goal of this project is to design a simple but robust dummy load/electronic load using the fewer components 
 possible but providing with a product that can do its job reasonably well and cheap.
 
-The nature of the project is also providing a great costumization of the cuircuit, both in the components and in 
+Also a greath customization of the circuit was archieved, both in the components and in 
 the maximun ratings (current, voltage, power...)
 ## Schematic 
 
@@ -25,9 +26,9 @@ the maximun ratings (current, voltage, power...)
 
 ## Function Principle
 
-The main part of the circuit is the U1A OpAmp. In this configuration it operates like a error amplifier. 
-The voltage feedback from the shunt resistor (R11) gets compared with votlage setted by the user using RV2 and, 
-by OpAmp effect the output changes until both voltages are the same (in theory).    
+The main part of the circuit is the U1A OpAmp (LM358). In this configuration it operates like a error amplifier. 
+The voltage feedback from the shunt resistor (R11) gets compared with voltage setted by the user using RV2 and, 
+by OpAmp effect the output changes until both voltages are the same.    
 
 The equation for the current is: 
 
@@ -48,7 +49,7 @@ modify the values I recomend this site: https://www.daycounter.com/Calculators/C
 
 There are some things that can be modified in the circuit. As you can see in the schematic the current set 
 circuitry can be changed to acomodate other types of voltage references (either by the use of a zener diode,
-voltge divider, LM317...). RV3 can be as well substituted by a voltage divider, but is not encouraged.  
+voltage divider, LM317...). RV3 can be as well substituted by a voltage divider, but is not encouraged.  
 The thermistor and resistor can be modified as well.
 In the fan driver circuit, if you already know the RV1 voltage you need, you can substitute RV1 with a voltage 
 divider. Feel free to use any mosfet/bjt that you have in hand and can withstand the fan currents.  
@@ -60,7 +61,6 @@ be adjusted to your need.
 That is, for example if you only need a 1A, 15V dummy load you should be good with only one MOSFET a 15V voltmeter
 , 1A amperemeter, a simpler input diode, maybe a higher shunt and a smaller heatsink. But if in the other hand 
 you want a 200W dummy load you will need to beef up the components.
-
 
 ## Usage 
 
@@ -87,15 +87,20 @@ is indeed disconected.
 
 ### Temperature limiting
 
-The overtemperature protection in this type of circuits is sadly a guessing game. According to the maths, roughly 
+This type of circuit is sadly a guessing game. According to the maths, roughly 
 8.0v in RV1 gives a ~90ºC upper threshold. But this voltage will vary a lot depending on your NTC value and 
-temperature curve.
+temperature curve. Adjust as necessary.
 
 ## Limitations
 
 The most obvious limitations are the voltmeter & amperemeter absolute maximun ratings. But keep in mind that in 
-reallity the most important part of this project is the heatsink and not providing the MOSFETS with enough
+reality the most important part of this project is the heatsink and not providing the MOSFETS with enough
 cooling will cause they destructions
+
+## Author 
+Raul Estevez Gomez. Contact email: estevezgomezraul@gmail.com  
+Please feel free to contact me if you have any type of suggestion or question. If you build this please send me a 
+photo i will feel very motivated!
 
 ## License
 You can read the license [here](LICENSE)
