@@ -10,7 +10,7 @@
 [BOM](#bom)  
 [Calibration](#calibration)  
 [Limitations](#limitations)  
-[Author] (#author)  
+[Author](#author)  
 [License](#license)  
 
 ## General Description
