@@ -1,3 +1,4 @@
+
 # SimpleElectronicLoad 
 
 #### Table of Contents 
@@ -10,13 +11,14 @@
 [Limitations](#limitations)  
 [License](#license)  
 
+## Schematic 
+
+![circuit schematic](/schematic/simpleelectronicload.pdf "Circuit schematic")
 ## Function Principle
 
 ## Customitations
 
 ## Usage 
-
-## Schematic 
 
 ## BOM
 
