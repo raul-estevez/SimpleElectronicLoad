@@ -2,10 +2,10 @@
 # SimpleElectronicLoad 
 
 #### Table of Contents 
+[Schematic](#schematic)  
 [Function Principle](#function-principle)  
 [Customitations](#customitations)  
 [Usage](#usage)  
-[Schematic](#schematic)  
 [BOM](#bom)  
 [Calibration](#calibration)  
 [Limitations](#limitations)  
