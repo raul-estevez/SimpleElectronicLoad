@@ -18,7 +18,7 @@
 The goal of this project is to design a simple but robust dummy load/electronic load using the fewer components 
 possible but providing with a product that can do its job reasonably well and cheap.
 
-Also a greath customization of the circuit was archieved, both in the components and in 
+Also a great customization of the circuit was archieved, both in the components and in 
 the maximun ratings (current, voltage, power...)
 ## Schematic 
 
@@ -40,7 +40,7 @@ RV3 takes as input the voltage from RV2 and outputs a calibrated voltage more su
 i.e the voltage swing of this pot is 0v -  I * R(shunt) and thus obtaining the most effective voltage swing almost
 independendent of the shunt resistor value.
 
-The fan driver functions as follows: R2, R3 & R4 set the hysteresis  in this case is 1v i.e if the upper limit 
+The fan driver functions as follows: R2, R3 & R4 set the hysteresis, in this case 1v, i.e if the upper limit 
 is lets say 9v, the fan only turns on when the voltage reaches that value, and it only turns off when it reaches 
 9 - 1 = 8v. RV1 sets the upper and lower bounds of the hysteresis (separated by 1v as disscused). If you want to 
 modify the values I recomend this site: https://www.daycounter.com/Calculators/Comparator-Hysteresis-Calculator.phtml
